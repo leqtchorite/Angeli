@@ -11,4 +11,4 @@ if table.find(is_blacklisted, (identifyexecutor() or getexecutorname())) then
     return
 end
 
-require('@utils/main')
+loadstring(game:HttpGet('https://raw.githubusercontent.com/leqtchorite/Angeli/refs/heads/main/utils/main.luau'))()
