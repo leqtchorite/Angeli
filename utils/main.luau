@@ -1,4 +1,4 @@
-local hashes = require('@utils/hash/hashes')
+local hashes = loadstring(game:HttpGet('https://raw.githubusercontent.com/leqtchorite/Angeli/refs/heads/main/utils/hash/hashes.luau'))()
 
 local function is_raknet()
     if not raknet then
