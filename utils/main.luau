@@ -26,15 +26,15 @@ local _raknet = hashes['_raknet']
 local _game = hashes[game_id]
 
 if not _game and not raknet_allowed then
-  game.Players.LocalPlayer:Kick('game not supported')
+    game.Players.LocalPlayer:Kick('game not supported')
 
-  return
+    return
 end
 
 if raknet_allowed and _raknet then
-  loadstring(game:HttpGet(`https://api.luarmor.net/files/v4/loaders/{_raknet}.lua`))()
+    loadstring(game:HttpGet(`https://api.luarmor.net/files/v4/loaders/{_raknet}.lua`))()
 end
 
 if _game then
-  loadstring(game:HttpGet(`https://api.luarmor.net/files/v4/loaders/{_game}.lua`))()
+    loadstring(game:HttpGet(`https://api.luarmor.net/files/v4/loaders/{_game}.lua`))()
 end
